@@ -1,11 +1,13 @@
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    text-align: center;
-  }
+  margin: 0;
+  font-size: 2.5em;
+  text-align: center;
+}
 
-  header {
-    background-color:darkseagreen;
-    color: white;
-    padding: 20px 0;
-  }
+header {
+  background-color: darkseagreen;
+  color: white;
+  padding: 20px 0;
+  display: flex; /* Agrega display: flex para centrar el contenido horizontalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+}
