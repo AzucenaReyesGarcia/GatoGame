@@ -43,23 +43,23 @@
     <p>La clase juego contiene la lógica principal del juego del gato. Controla el estado del tablero, los turnos de los jugadores, verifica las condiciones de victoria y empate, y reinicia el juego. </p>
 
     <h2>Atributos</h2>
-    
-    <p>str Tablero : Atributo de instancia. Matriz que representa el estado del tablero</p>
-    <p>str Turno : Atributo de instancia. Indica de quien es el turno actual (x o 0)</p>
-    <p>str Botones : Atributo de instancia. Almacena los botones que se colocan en el tablero</p>
-    <P>tk Master : Todos los elementos que se crean dentro de la clase juego (como los botones en este caso) se asocian a la ventana principal mediante el argumento master. </P>
+
+    <p>str tablero : Atributo de instancia. Matriz que representa el estado del tablero</p>
+    <p>str turno : Atributo de instancia. Indica de quien es el turno actual (x o 0)</p>
+    <p>str botones : Atributo de instancia. Almacena los botones que se colocan en el tablero</p>
+    <P>tk master : Todos los elementos que se crean dentro de la clase juego (como los botones en este caso) se asocian a la ventana principal mediante el argumento master. </P>
     
     <h2>Metodos</h2>
 
-    <p>Void __init__ : Inicializa el juego</p>
-    <p>Void Empezar_el_juego (self, int fila, int columna): Genera las filas y columnas dentro del tablero, asigna el turno X o O.</p>
-    <p>Void Verificar_ganador (self) : Comprueba si hay una fila, columna o diagonal con el mismo simbolo (X o O)</p>
-    <p>Void Reiniciar (self): Elimina el texto que contiene los botones</p>
+    <p>void __init__ : Inicializa el juego</p>
+    <p>void empezar_el_juego (self, int fila, int columna): Genera las filas y columnas dentro del tablero, asigna el turno X o O.</p>
+    <p>void verificar_ganador (self) : Comprueba si hay una fila, columna o diagonal con el mismo simbolo (X o O)</p>
+    <p>void reiniciar (self): Elimina el texto que contiene los botones</p>
 
     <h1>Clase Boton</h1> 
     <ul>
 
-      <h2> ¿Que Hace la clase?</h2>
+    <h2> ¿Que Hace la clase?</h2>
 
     <p>La clase boton se encarga de crear los botones en la interfaz gráfica del juego del gato. Cada instancia de esta clase representa un botón individual en el tablero. </p>
 
@@ -75,8 +75,8 @@
 </ul>
 
 
-<p>Void __init__ (self, tk master, int fila, int columna,  instancia juego): Inicializa el boton</p>
-<p>Void Actualizar_estado (self, str texto): Actualiza el texto del botón ya que por defecto esta vacio, y hace visible una X o un O</p>
+<p>void __init__ (self, tk master, int fila, int columna,  instancia juego): Inicializa el boton</p>
+<p>void actualizar_estado (self, str texto): Actualiza el texto del botón ya que por defecto esta vacio, y hace visible una X o un O</p>
 
     <article>
       <h2>Diagrama UML</h2>
