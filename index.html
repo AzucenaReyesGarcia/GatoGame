@@ -42,11 +42,15 @@
 
     <p>La clase juego contiene la lógica principal del juego del gato. Controla el estado del tablero, los turnos de los jugadores, verifica las condiciones de victoria y empate, y reinicia el juego. </p>
 
-
+    <h2>Atributos</h2>
+    
     <p>str Tablero : Atributo de instancia. Matriz que representa el estado del tablero</p>
     <p>str Turno : Atributo de instancia. Indica de quien es el turno actual (x o 0)</p>
     <p>str Botones : Atributo de instancia. Almacena los botones que se colocan en el tablero</p>
     <P>tk Master : Todos los elementos que se crean dentro de la clase juego (como los botones en este caso) se asocian a la ventana principal mediante el argumento master. </P>
+    
+    <h2>Metodos</h2>
+
     <p>Void __init__ : Inicializa el juego</p>
     <p>Void Empezar_el_juego (self, int fila, int columna): Genera las filas y columnas dentro del tablero, asigna el turno X o O.</p>
     <p>Void Verificar_ganador (self) : Comprueba si hay una fila, columna o diagonal con el mismo simbolo (X o O)</p>
