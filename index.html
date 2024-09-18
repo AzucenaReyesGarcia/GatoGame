@@ -42,26 +42,26 @@
     <p>str Turno : Atributo de instancia. Indica de quien es el turno actual (x o 0)</p>
     <p>str Botones : Atributo de instancia. Almacena los botones que se colocan en el tablero</p>
     <P>tk Master : Todos los elementos que se crean dentro de la clase juego (como los botones en este caso) se asocian a la ventana principal mediante el argumento master. </P>
-    <p>__init__ : Inicializa el juego</p>
+    <p>Void __init__ : Inicializa el juego</p>
     <p>Void Empezar_el_juego (self, int fila, int columna): Genera las filas y columnas dentro del tablero, asigna el turno X o O.</p>
-    <p>Void Verificar_ganador (self) : Comprueba si hay un ganador o si es empate</p>
+    <p>Void Verificar_ganador (self) : Comprueba si hay una fila, columna o diagonal con el mismo simbolo (X o O)</p>
     <p>Void Reiniciar (self): Elimina el texto que contiene los botones</p>
 
-    <h2>Clase Boton</h2> 
+    <h1>Clase Boton</h1> 
     <ul>
       <li>Atributos</li> 
   </ul>
 
   <p> int Fila: Del boton del tablero</p>
   <p> int Colunma: Del boton del tablero</p>
-  <p> int juego: Referencia a la instancia de la clase juego.</p>
+  <p> juego: Instancia de la clase juego.</p>
 
   <ul>
     <li>Metodos</li> 
 </ul>
 
 
-<p>__init__ (self, tk master, int fila, int columna,  instancia juego): Inicializa el boton</p>
+<p>Void __init__ (self, tk master, int fila, int columna,  instancia juego): Inicializa el boton</p>
 <p>Void Actualizar_estado (self, str texto): Actualiza el texto del botón ya que por defecto esta vacio, y hace visible una X o un O</p>
 
     <article>
